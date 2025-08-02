@@ -2,8 +2,6 @@ package exe_02;
 
 import java.util.Scanner;
 
-import src.gato;
-
 public class Main {
 	public static void main(String[]args) {
 		Scanner scanner = new Scanner(System.in);
@@ -31,11 +29,17 @@ public class Main {
 		System.out.println("A velocidade do carro é: "+moto.velocidade);
 		System.out.println("A quantidade de cilindros da moto é: "+moto.velocidade);
 		
+	
+		moto.acelerar();
+		moto.freiar();
+		System.out.println("Velocidade atual: "+moto.velocidade);
+		System.out.println("Freagem atual: "+moto.velocidade);
+		
+		
 		scanner.close();
 
 	}
 
-}
 
 
 
