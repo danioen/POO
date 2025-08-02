@@ -1,0 +1,64 @@
+package exe_02;
+
+import java.util.Scanner;
+
+import src.gato;
+
+public class Main {
+	public static void main(String[]args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Digite a marca da moto: ");
+		String marca = scanner.next();
+		Moto moto = new Moto();
+		moto.marca = marca;
+		
+		System.out.println("Digite a cor da moto: ");
+		String cor = scanner.next();
+		moto.cor = cor;
+		
+		System.out.println("Informe a velocidade da moto: ");
+		int velocidade = scanner.nextInt();
+		moto.velocidade = velocidade;
+		
+		System.out.println("Informe a quantidade de cilindros da moto: ");
+		int cilindros = scanner.nextInt();
+		moto.cilindros = cilindros;
+		
+		
+		System.out.println("A marca da moto é: "+moto.marca);
+		System.out.println("A cor da moto é: "+moto.cor);
+		System.out.println("A velocidade do carro é: "+moto.velocidade);
+		System.out.println("A quantidade de cilindros da moto é: "+moto.velocidade);
+		
+		scanner.close();
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+package exe_02;
+
+public class Moto {
+	String cor;
+	String marca;
+	int velocidade;
+	int cilindros;
+	
+	public void acelerar() {
+		velocidade = velocidade +10;
+	}
+	
+	public void freiar() {
+		velocidade = velocidade -10;
+	}
+
+}
