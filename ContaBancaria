@@ -1,0 +1,50 @@
+package Q2;
+
+public class ContaBancaria {
+	private String numero;
+	private String titular;
+	private double saldo;
+
+	
+	//Numero
+	
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
+	
+	public String getNumero() {
+		return numero;
+	}
+	
+	//Titular
+	public void setTitular(String titular) {
+		this.titular = titular;
+	}
+	
+	public String getTitular() {
+		return titular;
+	}
+	
+	//Saldo
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	
+	//Depositar
+	public void depositar(double valor) {
+		if(valor<0) {
+			throw new IllegalArgumentException("Valor Inválido!");
+		}else {
+			saldo+=valor;
+		
+			}
+		
+		
+		
+		
+		
+	}
+}
